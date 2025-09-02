@@ -1,0 +1,43 @@
+# Paramètres des trajectoires de référence
+
+# Type de trajectoire: circle, square, figure8, waypoints, point
+trajectory_type: "circle"
+
+# Paramètres généraux
+center_x: 5.5        # Centre X de la trajectoire
+center_y: 5.5        # Centre Y de la trajectoire
+publish_rate: 10.0   # Fréquence de publication (Hz)
+
+# Trajectoire circulaire
+circle:
+  radius: 2.0        # Rayon du cercle
+  period: 20.0       # Période complète en secondes
+  clockwise: false   # Sens de rotation
+
+# Trajectoire carrée
+square:
+  size: 3.0          # Taille du côté
+  period: 16.0       # Période complète en secondes
+  corner_pause: 1.0  # Pause aux coins en secondes
+
+# Trajectoire en 8
+figure8:
+  width: 4.0         # Largeur du 8
+  height: 2.0        # Hauteur du 8  
+  period: 25.0       # Période complète en secondes
+
+# Points de passage prédéfinis
+waypoints:
+  points:
+    - [2.0, 2.0, 0.0]      # [x, y, theta]
+    - [9.0, 2.0, 1.57]     # π/2
+    - [9.0, 9.0, 3.14]     # π  
+    - [2.0, 9.0, -1.57]    # -π/2
+    - [5.5, 5.5, 0.0]      # Centre
+  dwell_time: 2.0          # Temps d'arrêt à chaque point
+
+# Point fixe
+point:
+  x: 5.5
+  y: 5.5
+  theta: 0.0

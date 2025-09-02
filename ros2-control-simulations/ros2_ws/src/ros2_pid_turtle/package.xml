@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>ros2_pid_turtle</name>
+  <version>1.0.0</version>
+  <description>
+    Contrôleur PID avec modèle cinématique bicyclette pour turtlesim.
+    Projet pédagogique d'automatique et robotique.
+  </description>
+
+  <!-- Informations du mainteneur -->
+  <maintainer email="etudiant@universite.fr">Nom Étudiant</maintainer>
+  <license>MIT</license>
+
+  <!-- URLs du projet -->
+  <url type="website">https://github.com/user/ros2_pid_turtle</url>
+  <url type="bugtracker">https://github.com/user/ros2_pid_turtle/issues</url>
+  <url type="repository">https://github.com/user/ros2_pid_turtle</url>
+
+  <!-- Dépendances de build -->
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <!-- Dépendances d'exécution -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>turtlesim</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>tf2_py</exec_depend>
+  <exec_depend>tf2_geometry_msgs</exec_depend>
+
+  <!-- Dépendances de test -->
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
